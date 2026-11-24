@@ -1,84 +1,176 @@
-# Week 4 — Penetration Testing and Vulnerability Assessment
+# 🔐 WEEK 4 – PENETRATION TESTING & VULNERABILITY ASSESSMENT
 
-## Project overview
+## Mediroza General Hospital | NETWORKWALKS
 
-This repository documents my Week 4 cybersecurity training project with **NetworkWalks**. Using the Mediroza General Hospital scenario, I assessed web application security topics including network reconnaissance, document access controls, PDF password protection, SQL injection risks, and information disclosure.
+A hands-on black-box web application security assessment completed as part of the **NETWORKWALKS Week 4 Capstone Project – Batch B084**.
 
-The project focused on understanding potential security impact, documenting observations, and recommending defensive measures.
-
-> **Authorization and scope:** This work was conducted as an educational assessment in the NetworkWalks training environment. Testing should only be performed on systems for which explicit authorization has been granted.
-
-## Tools and topics
-
-| Tool or topic | Use in the project |
-|---|---|
-| Kali Linux | Security testing environment |
-| Nmap | Network reconnaissance and service discovery |
-| John the Ripper | Password hash auditing, where applicable |
-| PDF password auditing | Assessment of document password protection |
-| SQL injection | Web application and database security topic assessed |
-
-## Practical activities
-
-### W4-PM1: Mediroza General Hospital assessment
-
-- Investigated the hospital web application in the training scenario.
-- Performed network reconnaissance and service discovery.
-- Examined patient document access controls.
-- Assessed PDF password protection.
-- Investigated SQL injection risks.
-- Reviewed potential staff information exposure.
-- Considered the impact of observed security weaknesses.
-- Documented findings and remediation recommendations.
-
-### Security areas
-
-| Area | Assessment focus |
-|---|---|
-| Network reconnaissance | Open ports and running services |
-| Access control | Whether document access was appropriately restricted |
-| PDF security | Strength of password protection |
-| SQL injection | Risks from unsafe handling of database input |
-| Information disclosure | Potential exposure of sensitive information |
-| Data protection | Confidentiality of hospital-related information |
-
-## Lab environment
-
-| Component | Details |
-|---|---|
-| Operating system | Kali Linux |
-| Training platform | NetworkWalks |
-| Target scenario | Mediroza General Hospital |
-| Assessment type | Web application penetration testing |
-| Environment | Authorized educational lab |
-| Training week | Week 4 |
-
-## Project files
-
-- **Evidence:** [`screenshot/`](screenshot/)
-- **Final report:** [`REPORT`](REPORT)
-
-The report and evidence should be reviewed and sanitized before public release. Do not publish credentials, personal information, confidential documents, or sensitive data. Confirm that the paths above match the actual names and capitalization in this repository.
-
-## Learning outcomes
-
-- Network reconnaissance and service discovery
-- Web application security assessment
-- Access control review
-- PDF password security
-- SQL injection risks
-- Information disclosure and data protection
-- Vulnerability assessment and risk identification
-- Security reporting and remediation recommendations
-
-## Acknowledgements
-
-Thank you to [NetworkWalks](https://www.networkwalks.com/) and [Waqas A. Karim](https://www.linkedin.com/in/waqaskarim/) for the cybersecurity training, guidance, and practical learning opportunities.
-
-## Disclaimer
-
-This repository is for educational purposes. The assessment described here was performed in an authorized training environment. Do not test systems without explicit permission from their owner. Publicly shared evidence must be sanitized and approved for release.
+The assessment focused on reconnaissance, patient portal security, PDF password protection, potential SQL injection, and sensitive database exposure.
 
 ---
 
-**Learn • Practice • Improve • Secure**
+## 🎯 Project Overview
+
+| Detail | Information |
+|---|---|
+| Project | Mediroza General Hospital |
+| Organization | NETWORKWALKS |
+| Batch | B084 |
+| Week | Week 4 |
+| Assessment Type | Black-box Penetration Testing |
+| Target | `https://medirozahospital.com` |
+| Duration | Five days |
+| Status | Assessment Completed |
+
+> **Note:** This repository documents an authorized educational exercise. Testing was limited to the agreed target and scope.
+
+---
+
+## 📌 Project Objectives
+
+- Perform reconnaissance and identify exposed web services.
+- Examine patient portal authentication and access controls.
+- Assess encrypted patient PDF reports and password strength.
+- Review potential SQL-related data exposure.
+- Document findings, evidence, risk ratings, and remediation recommendations.
+
+---
+
+## 🛠️ Tools Used
+
+- **Nmap** – Network scanning and service discovery
+- **Gobuster** – Web directory and content discovery
+- **Nslookup** – DNS information gathering
+- **cURL** – HTTP request and response inspection
+- **PDF Hash Extraction Tool** – Encrypted PDF hash extraction
+- **Password Cracking Tool** – PDF password security testing
+- **Web Browser** – Portal and application assessment
+
+---
+
+## 📂 Project Milestones
+
+### M1 – Reconnaissance and Initial Assessment
+
+- Performed DNS and HTTP information gathering.
+- Reviewed `robots.txt` for publicly listed paths.
+- Used Nmap to identify open web ports.
+- Used Gobuster for content discovery.
+
+**Observation:** Ports 80 and 443 were shown as open in the supplied scan evidence. Directory discovery also returned several restricted responses.
+
+### M2 – PDF Password Security Testing
+
+- Identified three encrypted patient report entries in the portal.
+- Extracted a crackable hash from an encrypted PDF.
+- Observed successful password-cracking results.
+
+**Observation:** The supplied screenshots support hash extraction and two successful cracking states. Complete password-to-file mapping requires further verification.
+
+### M3 – Staff and Shareholder Data Exposure
+
+- Identified the database backup file `mediroza_db_backup_2019.sql`.
+- Examined the backup for staff-related and shareholder information.
+- Documented the potential exposure of employee contact details, salary information, and shareholder details.
+
+**Preliminary Risk:** High
+
+**Note:** The report distinguishes the database-backup observation from independently validated access through the suspected SQL-related route. Sensitive records are not reproduced in this repository.
+
+### M4 – Final Penetration Testing Report
+
+Prepared the final report with:
+
+- Executive Summary
+- Scope and Methodology
+- Findings and Proof of Exploitation
+- Risk Rating
+- Recommendations and Remediation
+- Evidence Register
+- Safe Evidence Handling Guidelines
+
+---
+
+## ⚠️ Key Security Observations
+
+| Finding | Observation | Preliminary Rating |
+|---|---|---|
+| F-01 | Information disclosure through `robots.txt` paths | Low |
+| F-02 | Suspected SQL injection or authentication bypass | High – Provisional |
+| F-03 | Patient report listing and access-control concerns | High – Provisional |
+| F-04 | Weak PDF password protection | High – Provisional |
+| M3 | Staff and shareholder database exposure assessment | Requires final validation |
+
+Risk ratings are preliminary and should be updated after confirming exploitability, access conditions, and impact.
+
+---
+
+## 🛡️ Recommendations and Remediation
+
+- Use parameterized SQL queries to prevent SQL injection.
+- Implement server-side authentication and authorization.
+- Restrict access to patient reports and sensitive files.
+- Store database backups outside publicly accessible directories.
+- Encrypt database backups and apply strict access controls.
+- Use strong, unique passwords for encrypted documents.
+- Avoid relying on `robots.txt` to protect sensitive resources.
+- Monitor application logs for suspicious authentication activity.
+
+---
+
+## 📸 Evidence and Documentation
+
+The repository contains supporting project evidence and the final report.
+
+```text
+Week-4-Penetration-Testing/
+│
+├── README.md
+│
+├── screenshots/
+│   ├── Reconnaissance/
+│   ├── Nmap-Gobuster/
+│   ├── Patient-Portal/
+│   ├── PDF-Hash-Extraction/
+│   └── Password-Testing/
+│
+└── Mediroza_General_Hospital_Pentest_Report_With_Evidence.pdf
+```
+
+*Folder names above are an example structure; adjust them to match the actual repository.*
+
+---
+
+## 📑 Final Report
+
+The complete penetration testing report includes the assessment scope, methodology, findings, risk ratings, remediation guidance, and redacted evidence.
+
+**Report:** `Mediroza_General_Hospital_Pentest_Report_With_Evidence.pdf`
+
+---
+
+## 💡 Key Learning Outcomes
+
+- Understanding the penetration testing methodology.
+- Performing reconnaissance and web content discovery.
+- Assessing authentication and access-control weaknesses.
+- Understanding PDF encryption and password security.
+- Identifying risks associated with exposed database backups.
+- Preparing professional security reports and documenting evidence safely.
+
+---
+
+## 🙏 Acknowledgement
+
+Special thanks to **NETWORKWALKS** and **Sir Waqas Karim (CCIE)** for their guidance, support, and learning opportunities throughout this cybersecurity training journey.
+
+---
+
+## ⚠️ Disclaimer
+
+This repository is intended for educational and authorized security assessment purposes only. Do not use the techniques described here against systems without explicit permission.
+
+Sensitive patient, employee, shareholder, password, and authentication information must not be published.
+
+---
+
+**#CyberSecurity #PenetrationTesting #EthicalHacking #NETWORKWALKS #WebSecurity #InfoSec**
