@@ -99,13 +99,13 @@ The assessment focused on understanding security risks, documenting findings, an
 
 ## `06 // PROJECT EVIDENCE`
 
-All screenshots, testing observations, and assessment evidence are organized in the `screenshot/` directory.
-
-The evidence documents the practical activities performed during the Mediroza General Hospital security assessment.
+All screenshots, testing observations, and practical assessment evidence are available in a single directory.
 
 📸 **Evidence Folder:** [`screenshot/`](screenshot/)
 
-📁 **Report:** [`Week 4 Final Report`](report/)
+📄 **Final Report:** [`Week4-Final-Report.pdf`](report/Week4-Final-Report.pdf)
+
+The evidence documents network reconnaissance, access control testing, PDF security assessment, and SQL injection analysis.
 
 ## `07 // LEARNING OUTCOMES`
 
