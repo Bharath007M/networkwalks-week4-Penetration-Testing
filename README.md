@@ -56,7 +56,7 @@ The project focused on understanding potential security impact, documenting obse
 ## Project files
 
 - **Evidence:** [`screenshot/`](screenshot/)
-- **Final report:** [`Week4-Final-Report.pdf`](report/Week4-Final-Report.pdf)
+- **Final report:** [`REPORT`](REPORT)
 
 The report and evidence should be reviewed and sanitized before public release. Do not publish credentials, personal information, confidential documents, or sensitive data. Confirm that the paths above match the actual names and capitalization in this repository.
 
