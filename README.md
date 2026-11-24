@@ -98,7 +98,7 @@ Prepared the final report with:
 | F-02 | Suspected SQL injection or authentication bypass | High – Provisional |
 | F-03 | Patient report listing and access-control concerns | High – Provisional |
 | F-04 | Weak PDF password protection | High – Provisional |
-| M3 | Staff and shareholder database exposure assessment | Requires final validation |
+| M3 | Staff and shareholder database exposure assessment | high|
 
 Risk ratings are preliminary and should be updated after confirming exploitability, access conditions, and impact.
 
