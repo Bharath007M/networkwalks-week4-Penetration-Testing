@@ -1,155 +1,84 @@
-# 🔐 WEEK 4 – PENETRATION TESTING & VULNERABILITY ASSESSMENT
+# Week 4 — Penetration Testing and Vulnerability Assessment
 
-<div align="center">
+## Project overview
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:003B20,100:00FF7F&height=180&section=header&text=WEEK%204%20CYBERSECURITY&fontSize=35&fontColor=00FF7F&animation=fadeIn&fontAlignY=35&desc=PENETRATION%20TESTING%20%7C%20VULNERABILITY%20ASSESSMENT&descAlignY=58&descSize=14" width="100%"/>
+This repository documents my Week 4 cybersecurity training project with **NetworkWalks**. Using the Mediroza General Hospital scenario, I assessed web application security topics including network reconnaissance, document access controls, PDF password protection, SQL injection risks, and information disclosure.
 
-# `> BHARATH M`
+The project focused on understanding potential security impact, documenting observations, and recommending defensive measures.
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00FF7F&center=true&vCenter=true&width=650&lines=Cybersecurity+Enthusiast+%F0%9F%94%90;Exploring+Web+Application+Security;Penetration+Testing;SQL+Injection+%26+File+Security;Think+Like+an+Attacker.+Defend+Like+a+Pro." alt="Typing SVG"/>
+> **Authorization and scope:** This work was conducted as an educational assessment in the NetworkWalks training environment. Testing should only be performed on systems for which explicit authorization has been granted.
 
-<br>
+## Tools and topics
 
-<img src="https://img.shields.io/badge/PROJECT-WEEK%2004-00FF7F?style=for-the-badge&labelColor=000000"/>
-<img src="https://img.shields.io/badge/PLATFORM-KALI%20LINUX-557C94?style=for-the-badge&logo=kalilinux&logoColor=white"/>
-<img src="https://img.shields.io/badge/STATUS-COMPLETED-00C853?style=for-the-badge"/>
-
-</div>
-
----
-
-## `01 // PROJECT OVERVIEW`
-
-Welcome to my **Week 4 Cybersecurity Project!**
-
-Successfully completed Week 4 of my Cybersecurity Training with **NetworkWalks**.
-
-This week focused on **Penetration Testing and Vulnerability Assessment**, using a hospital web application security assessment scenario – **Mediroza General Hospital**.
-
-The project involved investigating web application security weaknesses, examining sensitive document access, understanding PDF password protection, and identifying SQL injection vulnerabilities.
-
-The assessment focused on understanding security risks, documenting findings, and recommending defensive measures.
-
-## `02 // TOOLS & TECHNOLOGIES`
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/KALI%20LINUX-557C94?style=for-the-badge&logo=kalilinux&logoColor=white"/>
-<img src="https://img.shields.io/badge/NMAP-00FF7F?style=for-the-badge&logo=linux&logoColor=black"/>
-<img src="https://img.shields.io/badge/SQL%20INJECTION-00FF7F?style=for-the-badge&logo=databricks&logoColor=black"/>
-<img src="https://img.shields.io/badge/JOHN%20THE%20RIPPER-003B20?style=for-the-badge&logo=linux&logoColor=white"/>
-<img src="https://img.shields.io/badge/NETWORKWALKS-003B20?style=for-the-badge&logo=hackthebox&logoColor=white"/>
-
-</div>
-
-| Tool / Technology | Purpose |
+| Tool or topic | Use in the project |
 |---|---|
-| Kali Linux | Penetration testing environment |
+| Kali Linux | Security testing environment |
 | Nmap | Network reconnaissance and service discovery |
-| SQL Injection | Understanding database security vulnerabilities |
-| PDF Password Auditing | Examining document password protection |
-| John the Ripper | Password hash auditing |
-| NetworkWalks | Cybersecurity training platform |
+| John the Ripper | Password hash auditing, where applicable |
+| PDF password auditing | Assessment of document password protection |
+| SQL injection | Web application and database security topic assessed |
 
-## `03 // PRACTICAL ACTIVITIES`
+## Practical activities
 
-### 🏥 W4-PM1: Mediroza General Hospital – Penetration Testing
+### W4-PM1: Mediroza General Hospital assessment
 
-- [x] Investigated the hospital web application.
-- [x] Performed network reconnaissance and service discovery.
-- [x] Examined patient document access controls.
-- [x] Investigated PDF password protection.
-- [x] Identified SQL injection vulnerabilities.
-- [x] Examined potential exposure of staff information.
-- [x] Analyzed security weaknesses and their impact.
-- [x] Documented findings and remediation recommendations.
+- Investigated the hospital web application in the training scenario.
+- Performed network reconnaissance and service discovery.
+- Examined patient document access controls.
+- Assessed PDF password protection.
+- Investigated SQL injection risks.
+- Reviewed potential staff information exposure.
+- Considered the impact of observed security weaknesses.
+- Documented findings and remediation recommendations.
 
-### 🔍 KEY SECURITY AREAS INVESTIGATED
+### Security areas
 
-| Security Area | Assessment Focus |
+| Area | Assessment focus |
 |---|---|
-| Network Reconnaissance | Open ports and running services |
-| Access Control | Unauthorized document access |
-| PDF Security | Password protection weaknesses |
-| SQL Injection | Database security weaknesses |
-| Information Disclosure | Exposure of sensitive information |
-| Data Protection | Confidentiality of hospital information |
+| Network reconnaissance | Open ports and running services |
+| Access control | Whether document access was appropriately restricted |
+| PDF security | Strength of password protection |
+| SQL injection | Risks from unsafe handling of database input |
+| Information disclosure | Potential exposure of sensitive information |
+| Data protection | Confidentiality of hospital-related information |
 
-## `04 // LAB ENVIRONMENT`
+## Lab environment
 
-| Component | Configuration |
+| Component | Details |
 |---|---|
-| Operating System | Kali Linux |
-| Platform | NetworkWalks |
-| Target Scenario | Mediroza General Hospital |
-| Assessment Type | Web Application Penetration Testing |
-| Testing Environment | Authorized Educational Lab |
-| Training Week | Week 4 |
+| Operating system | Kali Linux |
+| Training platform | NetworkWalks |
+| Target scenario | Mediroza General Hospital |
+| Assessment type | Web application penetration testing |
+| Environment | Authorized educational lab |
+| Training week | Week 4 |
 
-## `05 // PROJECT COMPLETION`
+## Project files
 
-<div align="center">
+- **Evidence:** [`screenshot/`](screenshot/)
+- **Final report:** [`Week4-Final-Report.pdf`](report/Week4-Final-Report.pdf)
 
-<img src="https://img.shields.io/badge/W4--PM1-PENETRATION%20TESTING%20COMPLETED-00C853?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/REPORT-VULNERABILITY%20ASSESSMENT-00FF7F?style=for-the-badge"/>
+The report and evidence should be reviewed and sanitized before public release. Do not publish credentials, personal information, confidential documents, or sensitive data. Confirm that the paths above match the actual names and capitalization in this repository.
 
-### <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=00FF7F&center=true&vCenter=true&width=500&lines=WEEK+4+SUCCESSFULLY+COMPLETED!;PENETRATION+TESTING+FINISHED!"/>
+## Learning outcomes
 
-</div>
+- Network reconnaissance and service discovery
+- Web application security assessment
+- Access control review
+- PDF password security
+- SQL injection risks
+- Information disclosure and data protection
+- Vulnerability assessment and risk identification
+- Security reporting and remediation recommendations
 
-## `06 // PROJECT EVIDENCE`
+## Acknowledgements
 
-All screenshots, testing observations, and practical assessment evidence are available in a single directory.
+Thank you to [NetworkWalks](https://www.networkwalks.com/) and [Waqas A. Karim](https://www.linkedin.com/in/waqaskarim/) for the cybersecurity training, guidance, and practical learning opportunities.
 
-📸 **Evidence Folder:** [`screenshot/`](screenshot/)
+## Disclaimer
 
-📄 **Final Report:** [`Week4-Final-Report.pdf`](report/Week4-Final-Report.pdf)
-
-The evidence documents network reconnaissance, access control testing, PDF security assessment, and SQL injection analysis.
-
-## `07 // LEARNING OUTCOMES`
-
-Through this project, I explored:
-
-- Network reconnaissance and service discovery.
-- Web application penetration testing.
-- Access control vulnerabilities.
-- PDF password security.
-- SQL injection vulnerabilities.
-- Database information disclosure risks.
-- Sensitive data protection.
-- Vulnerability assessment and risk identification.
-- Security reporting and remediation techniques.
-
-## `08 // ACKNOWLEDGEMENTS`
-
-Special thanks to:
-
-- **[NetworkWalks](https://www.networkwalks.com/)**
-- **[Waqas A. Karim](https://www.linkedin.com/in/waqaskarim/)**
-
-For providing valuable cybersecurity training, guidance, and practical learning opportunities.
-
-## `09 // DISCLAIMER`
-
-This repository is intended strictly for educational purposes.
-
-All penetration testing and vulnerability assessment activities must be conducted only within authorized lab environments or systems for which explicit permission has been granted.
-
-Any evidence shared publicly must be sanitized to remove personal information, credentials, confidential documents, and sensitive data.
+This repository is for educational purposes. The assessment described here was performed in an authorized training environment. Do not test systems without explicit permission from their owner. Publicly shared evidence must be sanitized and approved for release.
 
 ---
 
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1500&color=00FF7F&center=true&vCenter=true&width=650&lines=Keep+Learning.+Keep+Building.+Keep+Securing.;Week+4+Successfully+Completed!;The+Cybersecurity+Journey+Continues...;Stay+Curious.+Stay+Ethical.+%F0%9F%94%90" alt="Footer Animation"/>
-
-<br>
-
-**LEARN • PRACTICE • IMPROVE • SECURE**
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FF7F,50:003B20,100:000000&height=100&section=footer" width="100%"/>
-
-</div>
+**Learn • Practice • Improve • Secure**
